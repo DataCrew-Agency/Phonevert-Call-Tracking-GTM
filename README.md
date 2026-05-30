@@ -1,4 +1,4 @@
-# Phonevert-Call-Tracking-GTM
+# Phonevert Call Tracking GTM Tag Template
 
 Google Tag Manager **custom tag template** that loads the **Phonevert Call
 Tracking** script onto your website.
@@ -11,13 +11,6 @@ with your Phonevert API key (`window.phonevertConfig.apiKey`).
 - **API Key** – your Phonevert API key (starts with `pk_live_`). As a logged-in
   Phonevert user, copy it from the **Phonevert Base Code** page
   (<https://phonevert.ai/installation>) on the **GTM template** tab.
-
-## ⚠️ Consent
-
-This tag loads a third-party tracking script. It is **important that the tag is
-fired in accordance with the visitor's consent** — configure it to respect your
-consent management setup (e.g. GTM Consent Mode and/or a consent-gated firing
-trigger), so it only runs when the user has granted the relevant consent.
 
 ## Setup
 
