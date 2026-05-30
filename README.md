@@ -8,8 +8,9 @@ with your Phonevert API key (`window.phonevertConfig.apiKey`).
 
 ## Configuration
 
-- **API Key** – your Phonevert API key (starts with `pk_live_`), found on the
-  Installation page of your Phonevert dashboard.
+- **API Key** – your Phonevert API key (starts with `pk_live_`). As a logged-in
+  Phonevert user, copy it from the **Phonevert Base Code** page
+  (<https://phonevert.ai/installation>) on the **GTM template** tab.
 
 ## ⚠️ Consent
 
@@ -18,9 +19,25 @@ fired in accordance with the visitor's consent** — configure it to respect you
 consent management setup (e.g. GTM Consent Mode and/or a consent-gated firing
 trigger), so it only runs when the user has granted the relevant consent.
 
-## Installation
+## Setup
 
-1. In GTM, go to **Templates → Tag Templates → New** and import
-   `phonevert_call_tracking.tpl`.
-2. Create a new tag from the template and set the **API Key**.
-3. Add a firing trigger that is **gated by consent**.
+1. **Download the template** — Download the `phonevert_call_tracking.tpl` file
+   from this repository.
+
+2. **Import into GTM** — In Google Tag Manager go to
+   **Templates → Tag Templates → New → ⋮ menu → Import**, then select the
+   `.tpl` file.
+
+3. **Create a new tag** — Go to **Tags → New** and choose the Phonevert template
+   you just imported.
+
+4. **Enter your API key** — Paste your Phonevert API key into the tag's
+   **API Key** field. As a logged-in Phonevert user you can copy it from the
+   **Phonevert Base Code** page (<https://phonevert.ai/installation>) on the
+   **GTM template** tab.
+
+5. **Set the trigger and consent** — Add the **Initialization — All Pages**
+   trigger (or **All Pages**) so it loads on every page. **Important:** Phonevert
+   should only run with the appropriate consent.
+
+6. **Save & publish** — Save the tag, then submit and publish your container.
