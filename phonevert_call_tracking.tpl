@@ -35,7 +35,7 @@ ___TEMPLATE_PARAMETERS___
         "errorMessage": "API Key is required."
       }
     ],
-    "help": "Your Phonevert API key (starts with pk_live_). Find it on the Installation page of your Phonevert dashboard.",
+    "help": "Your Phonevert API key (starts with pk_live_). As a logged-in Phonevert user, copy it from the Phonevert Base Code page (https://phonevert.ai/installation) on the GTM template tab.",
     "valueHint": "pk_live_..."
   }
 ]
